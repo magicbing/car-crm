@@ -1,0 +1,38 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "lowdb is awesome"
+    },
+    {
+      "phoneNo": "13811112222",
+      "package": "A",
+      "remainder": "20",
+      "remark": "this is remark"
+    }
+  ],
+  "users": [
+    {
+      "phoneNo": "18551649003",
+      "package": "B",
+      "remainder": "999",
+      "remark": "this is remark2"
+    },
+    {
+      "phoneNo": "13311112222",
+      "package": "A",
+      "remainder": "22",
+      "remark": "this is remark22"
+    },
+    {
+      "phoneNo": "110",
+      "package": "C",
+      "remainder": "11",
+      "remark": "11100"
+    }
+  ],
+  "user": {
+    "name": "typicode"
+  },
+  "count": 27
+}
