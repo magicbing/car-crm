@@ -6,9 +6,15 @@
 5.数据库备份等
 
 新增
-{
-  'phoneNo': '13811112222', //主键手机号
-  'package': 'A', //套餐 A B C ...
-  'remainder': '20', //剩余次数
-  'remark': 'this is remark' //备注
-}
+  var par = {
+    'phoneNo': phoneNo, // 主键 手机号
+    'remark': remark, // 备注 
+    'plateNo': plateNo, // 车牌号
+    'milage': milage, // 公里数
+    'wax': wax, // 打蜡次数
+    'wash': wash, // 精洗次数
+    'polish': polish, // 抛光次数
+    'disinfection': disinfection  // 车内消毒次数
+    // 'package': package, // 套餐 A B C ...
+    // 'remainder': remainder, // 剩余次数
+  }

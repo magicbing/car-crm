@@ -19,11 +19,16 @@ router.use(function(req, res, next) {
   console.log('Something is happening.');
   next(); // 在这里会将request交给下一个中间件，如果这个中间件后面没有其他中间件，请求会交给匹配的路由作处理
 });
-// 创建一条bear (用 POST动词访问uri http://localhost:8080/api/bears)
+// 创建一条bear (用 POST动词访问uri http://localhost:8080/api/add)
 router.route('/add').post(function(req, res) {
   console.log(req.body)
-  db.get('users').push(req.body).write()
-  res.json({ message: 'create success!' });
+  var json = db.get('users').find({ 'phoneNo': req.body.phoneNo }).value()
+  if ( !json ) {
+    db.get('users').push(req.body).write()
+    res.json({ success: '创建 ' + req.body.phoneNo + ' 成功。' })
+  } else {
+    res.json({ error: '已存在 ' + req.body.phoneNo + ' 的数据!' });
+  }
   /* var bear = new Bear();      // 创建一个Bear model的实例
   bear.name = req.body.name;  // 从request取出name参数的值然后设置bear的name字段
   // 保存bear，加入错误处理，即把错误作为响应返回
@@ -32,6 +37,27 @@ router.route('/add').post(function(req, res) {
           res.send(err);
       res.json({ message: 'Bear created!' });
   }); */
+});
+
+router.route('/query').post(function(req, res) {
+  console.log(req.body)
+  var json = db.get('users').find({ 'phoneNo': req.body.phoneNo }).value()
+  if ( !!json ) {
+    res.json( json );
+  } else {
+    res.json({ error: '没有 ' + req.body.phoneNo + ' 的数据!' });
+  }
+});
+
+router.route('/modify').post(function(req, res) {
+  console.log(req.body)
+  var json = db.get('users').find({ 'phoneNo': req.body.phoneNo }).value()
+  if ( !!json ) {
+    db.get('users').find({ 'phoneNo': req.body.phoneNo }).assign(req.body).write()
+    res.json({ success: '修改 ' + req.body.phoneNo + ' 成功。' });
+  } else {
+    res.json({ error: '没有 ' + req.body.phoneNo + ' 的数据!' });
+  }
 });
 
 /* router.get('/add', function(req, res) {
@@ -50,33 +76,8 @@ app.get('/1', function (req, res) {
   .find({ 'phoneNo': '13811112222' })
   .value() )
 })
-
-//
-// Set some defaults (required if your JSON file is empty)
-// db.defaults({ posts: [], user: {}, count: 0 })
-//   .write()
-
-// Add a post
-// db.get('posts')
-//   .push({
-//     'phoneNo': '13811112222', //主键手机号
-//     'package': 'A', //套餐 A B C ...
-//     'remainder': '20', //剩余次数
-//     'remark': 'this is remark' //备注
-//   })
-//   .write()
-
-// Set a user using Lodash shorthand syntax
-// db.set('user.name', 'typicode')
-//   .write()
-  
 // Increment count
 db.update('count', n => n + 1)
   .write()
-
-// console.log( db.get('users')
-//   .find({ 'phoneNo': '18551649003' })
-//   .value() )
-
 //
 app.listen(port)

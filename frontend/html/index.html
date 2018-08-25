@@ -9,16 +9,46 @@
 
   </head>
   <body>
-    <h2>index.html</h2>
-    <input type="button" value="新增" id="add-btn">
+    <!-- <h2>index.html</h2> -->
     <div>
       <h3>新增</h3>
-      <input type="text" value="" id="add-phoneNo" placeholder="手机号码"> 
-      <input type="text" value="" id="add-package" placeholder="套餐"> 
-      <input type="text" value="" id="add-remainder" placeholder="剩余次数"> 
-      <input type="text" value="" id="add-remark" placeholder="备注"> 
+      <input type="button" value="新增" id="add-btn">
+      <br>
+      <span>
+        <input type="text" value="" id="add-phoneNo" placeholder="手机号码"> 
+        <input type="text" value="" id="add-remark" placeholder="备注">
+        <input type="text" value="" id="add-plateNo" placeholder="车牌号">
+        <input type="text" value="" id="add-milage" placeholder="公里数">
+        <input type="text" value="" id="add-wax" placeholder="打蜡次数">
+        <input type="text" value="" id="add-wash" placeholder="精洗次数">
+        <input type="text" value="" id="add-polish" placeholder="抛光次数">
+        <input type="text" value="" id="add-disinfection" placeholder="车内消毒次数">
+      </span>
+      <!-- <input type="text" value="" id="add-package" placeholder="套餐">  -->
+      <!-- <input type="text" value="" id="add-remainder" placeholder="剩余次数">  -->
     </div>
 
+    <div>
+      <h3>查询</h3>
+      <input type="button" value="查询" id="query-btn">
+      <span>
+        <input type="text" value="" id="query-phoneNo" placeholder="手机号码"> 
+      </span>
+      <br><br>
+      <span>
+          <input type="text" disabled value="" id="detail-phoneNo" placeholder="手机号码"> 
+          <input type="text" value="" id="detail-remark" placeholder="备注">
+          <input type="text" value="" id="detail-plateNo" placeholder="车牌号">
+          <input type="text" value="" id="detail-milage" placeholder="公里数">
+          <input type="text" value="" id="detail-wax" placeholder="打蜡次数">
+          <input type="text" value="" id="detail-wash" placeholder="精洗次数">
+          <input type="text" value="" id="detail-polish" placeholder="抛光次数">
+          <input type="text" value="" id="detail-disinfection" placeholder="车内消毒次数">
+        </span>
+        <br><br>
+        <input type="button" value="修改" id="modify-btn">
+    </div>
+    
     <script type="text/javascript" src="/lib/javascript/jquery.js"></script>
     <script type="text/javascript" src="/js/index.js"></script>
   </body>

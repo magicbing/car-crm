@@ -3,36 +3,29 @@
     {
       "id": 1,
       "title": "lowdb is awesome"
-    },
-    {
-      "phoneNo": "13811112222",
-      "package": "A",
-      "remainder": "20",
-      "remark": "this is remark"
     }
   ],
   "users": [
     {
+      "phoneNo": "13222225555",
+      "remark": "123",
+      "plateNo": "测试2",
+      "milage": "2",
+      "wax": "3",
+      "wash": "4",
+      "polish": "",
+      "disinfection": "72"
+    },
+    {
       "phoneNo": "18551649003",
-      "package": "B",
-      "remainder": "999",
-      "remark": "this is remark2"
-    },
-    {
-      "phoneNo": "13311112222",
-      "package": "A",
-      "remainder": "22",
-      "remark": "this is remark22"
-    },
-    {
-      "phoneNo": "110",
-      "package": "C",
-      "remainder": "11",
-      "remark": "11100"
+      "remark": "remark",
+      "plateNo": "苏A11111",
+      "milage": "111",
+      "wax": "11111",
+      "wash": "22222",
+      "polish": "333331",
+      "disinfection": "123123"
     }
   ],
-  "user": {
-    "name": "typicode"
-  },
-  "count": 27
+  "count": 30
 }
