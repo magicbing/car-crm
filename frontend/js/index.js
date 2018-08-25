@@ -8,7 +8,7 @@ $('#add-btn').click(function () {
     'phoneNo': $('#add-phoneNo').val(), //主键手机号
     'package': $('#add-package').val(), //套餐 A B C ...
     'remainder': $('#add-remainder').val(), //剩余次数
-    'remark': $('#add-remark').val() //备注
+    'remark': $('#add-remark').val() //备注 
   }
   $.ajax({
     type: 'post',
