@@ -7,10 +7,13 @@ const router = express.Router();
 //lowdb
 const low = require('lowdb')
 const FileSync = require('lowdb/adapters/FileSync')
-const adapter = new FileSync('db.json')
+const adapter = new FileSync('database/db.json')
 const db = low(adapter)
+// backup
+const fs = require('fs');
 //常量
 const port = process.env.PORT || 3000;
+
 // 给app配置bodyParser中间件
 // 通过如下配置再路由种处理request时，可以直接获得post请求的body部分
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -60,6 +63,16 @@ router.route('/modify').post(function(req, res) {
   }
 });
 
+router.route('/queryAll').post(function(req, res) {
+  console.log(req.body)
+  var json = db.get('users').value()
+  if ( !!json ) {
+    res.json( json );
+  } else {
+    res.json({ error: '暂无数据!' });
+  }
+});
+
 /* router.get('/add', function(req, res) {
   res.json({ message: 'router get add' });   
 }); */
@@ -71,13 +84,31 @@ app.use(express.static(path.join(__dirname, 'frontend')))
 app.get('/0', function (req, res) {
   res.send('Hello World')
 })
-app.get('/1', function (req, res) {
-  res.send(  db.get('posts')
-  .find({ 'phoneNo': '13811112222' })
-  .value() )
-})
 // Increment count
-db.update('count', n => n + 1)
-  .write()
-//
+db.update('count', n => n + 1).write()
+
+/* 
+ * backup func 
+ * 每日第一次启动程序备份
+ */
+function copyData() {
+  var date = new Date()
+  var time = date.toLocaleDateString()
+  var from = 'database/db.json'
+  var to = 'database/backup/' + time + '.json'
+  fs.exists('database/backup/' + time + '.json', function(exists){
+    if (exists) {
+      console.log( time + '.json 文件存在, 今日已备份' )
+    }
+    if (!exists) {
+      fs.createReadStream(from).pipe(fs.createWriteStream(to)) //大文件复制
+      console.log( time + '.json 备份成功' )
+    }
+  })
+  // fs.writeFileSync(to, fs.readFileSync(from)) //小文件复制
+  // var time = date.getFullYear().toString() + ( date.getMonth()+1 ).toString() + date.getDate().toString()
+  // copyData( 'database/db.json', 'database/backup/201808263.json' )
+}
+copyData()
+
 app.listen(port)

@@ -1,13 +1,7 @@
 {
-  "posts": [
-    {
-      "id": 1,
-      "title": "lowdb is awesome"
-    }
-  ],
   "users": [
     {
-      "phoneNo": "13222225555",
+      "phoneNo": "13222225555q",
       "remark": "123",
       "plateNo": "测试2",
       "milage": "2",
@@ -25,6 +19,16 @@
       "wash": "22222",
       "polish": "333331",
       "disinfection": "123123"
+    },
+    {
+      "phoneNo": "0",
+      "remark": "1",
+      "plateNo": "1",
+      "milage": "1",
+      "wax": "1",
+      "wash": "1",
+      "polish": "1",
+      "disinfection": "1"
     },
     {
       "phoneNo": "1",
@@ -227,8 +231,5 @@
       "disinfection": "10"
     }
   ],
-  "user": {
-    "name": "typicode"
-  },
-  "count": 32
+  "count": 53
 }

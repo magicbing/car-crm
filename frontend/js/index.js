@@ -104,3 +104,45 @@ $('#modify-btn').click(function () {
     }
   });
 })
+
+$('#query-all-btn').click(function () {
+  console.log('this is query-all-btn')
+  // var phoneNo = $('#query-phoneNo').val()
+  // if ( !phoneNo ) { alert('手机号必须填写。');return; }
+  var par = {
+    // 'phoneNo': phoneNo // 主键 手机号
+  }
+  $.ajax({
+    type: 'post',
+    url: api + 'queryAll',
+    data: par,
+    dataType: 'json',
+    success: function(data) {
+      console.log( data )
+      if ( !!data.success ) {alert( data.success )}
+      if ( !!data.error ) {
+        alert( data.error )
+      } else {
+        aaa = data
+        var html = ''
+        for ( var i=0, l=data.length; i<l; i++ ) {
+          html += `
+            <tr>
+              <td>${i+1}</td>
+              <td>${data[i].phoneNo}</td>
+              <td>${data[i].remark}</td>
+              <td>${data[i].plateNo}</td>
+              <td>${data[i].milage}</td>
+              <td>${data[i].wax}</td>
+              <td>${data[i].wash}</td>
+              <td>${data[i].polish}</td>
+              <td>${data[i].disinfection}</td>
+            </tr>
+          `
+        }
+        
+        $('#query-all-tbody').html(html)
+      }
+    }
+  });
+})

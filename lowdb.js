@@ -4,6 +4,19 @@ const FileSync = require('lowdb/adapters/FileSync')
 const adapter = new FileSync('db.json')
 const db = low(adapter)
 
+//
+const FileAsync = require('lowdb/adapters/FileAsync')
+const adapter2 = new FileAsync('database/backup/20180826.json');
+const dbBackup = low(adapter2);
+fs.exists('database/backup/2018-8-26.json', function (exists) {
+  if (exists) {
+    console.log("文件存在")
+  }
+  if (!exists) {
+    console.log("文件不存在")
+  }
+})
+db.get('posts').cloneDeep().value()
 db.get('users').value() //查询全部
 db.get('users').map('phoneNo').value()
 
