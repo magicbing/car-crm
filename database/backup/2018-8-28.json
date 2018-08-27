@@ -5,20 +5,20 @@
       "remark": "123",
       "plateNo": "测试2",
       "milage": "2",
-      "wax": "1",
-      "wash": "1",
-      "polish": "119",
-      "disinfection": "69"
+      "wax": "3",
+      "wash": "4",
+      "polish": "",
+      "disinfection": "72"
     },
     {
       "phoneNo": "18551649003",
       "remark": "remark",
       "plateNo": "苏A11111",
       "milage": "111",
-      "wax": 11156,
-      "wash": 22228,
-      "polish": 333338,
-      "disinfection": 123128
+      "wax": "11111",
+      "wash": "22222",
+      "polish": "333331",
+      "disinfection": "123123"
     },
     {
       "phoneNo": "0",
@@ -45,20 +45,20 @@
       "remark": "2",
       "plateNo": "2",
       "milage": "2",
-      "wax": "0",
-      "wash": "1",
-      "polish": "0",
-      "disinfection": "0"
+      "wax": "2",
+      "wash": "2",
+      "polish": "2",
+      "disinfection": "2"
     },
     {
       "phoneNo": "3",
       "remark": "3",
       "plateNo": "3",
       "milage": "3",
-      "wax": "10",
-      "wash": "0",
-      "polish": "39",
-      "disinfection": "1"
+      "wax": "3",
+      "wash": "3",
+      "polish": "3",
+      "disinfection": "3"
     },
     {
       "phoneNo": "4",
@@ -75,10 +75,10 @@
       "remark": "5",
       "plateNo": "5",
       "milage": "5",
-      "wax": 4,
-      "wash": 4,
-      "polish": 4,
-      "disinfection": 4
+      "wax": "5",
+      "wash": "5",
+      "polish": "5",
+      "disinfection": "5"
     },
     {
       "phoneNo": "6",
@@ -229,67 +229,7 @@
       "wash": "10",
       "polish": "10",
       "disinfection": "10"
-    },
-    {
-      "phoneNo": "18511112222",
-      "remark": "",
-      "plateNo": "",
-      "milage": "",
-      "wax": -1,
-      "wash": "",
-      "polish": "",
-      "disinfection": ""
-    },
-    {
-      "phoneNo": "18811112222",
-      "remark": "1",
-      "plateNo": "2",
-      "milage": "3",
-      "wax": "3",
-      "wash": "4",
-      "polish": "5",
-      "disinfection": "6"
-    },
-    {
-      "phoneNo": "12311112222",
-      "remark": "1",
-      "plateNo": "2",
-      "milage": "3",
-      "wax": "3",
-      "wash": "4",
-      "polish": "5",
-      "disinfection": "6"
-    },
-    {
-      "phoneNo": "123111122223",
-      "remark": "1",
-      "plateNo": "2",
-      "milage": "3",
-      "wax": "4",
-      "wash": "5",
-      "polish": "6",
-      "disinfection": "7"
-    },
-    {
-      "phoneNo": "1231111222233",
-      "remark": "1",
-      "plateNo": "2",
-      "milage": "3",
-      "wax": "4",
-      "wash": "5",
-      "polish": "6",
-      "disinfection": "7"
-    },
-    {
-      "phoneNo": "12311112222333",
-      "remark": "1",
-      "plateNo": "2",
-      "milage": "3",
-      "wax": "3",
-      "wash": "4",
-      "polish": "5",
-      "disinfection": "6"
     }
   ],
-  "count": 87
+  "count": 54
 }

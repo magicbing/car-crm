@@ -1,8 +1,35 @@
 {
+  "log": {
+    "1": [
+      {
+        "time": "1535393886758",
+        "service": "wax"
+      },
+      {
+        "time": "1535391111111",
+        "service": "wash"
+      },
+      {
+        "time": "123",
+        "title": "lowdb is awesome"
+      }
+    ],
+    "2": [
+      {
+        "a": "1"
+      }
+    ]
+  },
   "posts": [
     {
       "id": 1,
-      "title": "lowdb is awesome"
+      "title": "lowdb is awesome",
+      "logs": [
+        {
+          "time": "1535393886758",
+          "service": "wax"
+        }
+      ]
     }
   ],
   "users": [

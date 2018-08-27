@@ -3,7 +3,7 @@ const FileSync = require('lowdb/adapters/FileSync')
 
 const adapter = new FileSync('db.json')
 const db = low(adapter)
-
+db.get('log["1"]').push({ 'time': '123', title: 'lowdb is awesome'}).write()
 //
 const FileAsync = require('lowdb/adapters/FileAsync')
 const adapter2 = new FileAsync('database/backup/20180826.json');

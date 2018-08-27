@@ -146,3 +146,95 @@ $('#query-all-btn').click(function () {
     }
   });
 })
+
+$('#wax-btn').click(function () {
+  console.log('this is wax-btn')
+  var phoneNo = $('#detail-phoneNo').val()
+  var wax = $('#detail-wax').val()
+  if ( !phoneNo ) { alert('手机号必须填写。');return; }
+  if ( !(wax > '0') ) { alert('剩余次数不足。');return; }
+  var par = {
+    'phoneNo': phoneNo // 主键 手机号
+  }
+  $.ajax({
+    type: 'post',
+    url: api + 'wax',
+    data: par,
+    dataType: 'json',
+    success: function(data) {
+      console.log( data )
+      if ( !!data.success ) {alert( data.success )}
+      if ( !!data.error ) {alert( data.error )}
+      $('#query-btn').trigger('click')
+    }
+  });
+})
+
+$('#wash-btn').click(function () {
+  console.log('this is wash-btn')
+  var phoneNo = $('#detail-phoneNo').val()
+  var wash = $('#detail-wash').val()
+  if ( !phoneNo ) { alert('手机号必须填写。');return; }
+  if ( !(wash > '0') ) { alert('剩余次数不足。');return; }
+  var par = {
+    'phoneNo': phoneNo // 主键 手机号
+  }
+  $.ajax({
+    type: 'post',
+    url: api + 'wash',
+    data: par,
+    dataType: 'json',
+    success: function(data) {
+      console.log( data )
+      if ( !!data.success ) {alert( data.success )}
+      if ( !!data.error ) {alert( data.error )}
+      $('#query-btn').trigger('click')
+    }
+  });
+})
+
+$('#polish-btn').click(function () {
+  console.log('this is polish-btn')
+  var phoneNo = $('#detail-phoneNo').val()
+  var polish = $('#detail-polish').val()
+  if ( !phoneNo ) { alert('手机号必须填写。');return; }
+  if ( !(polish > '0') ) { alert('剩余次数不足。');return; }
+  var par = {
+    'phoneNo': phoneNo // 主键 手机号
+  }
+  $.ajax({
+    type: 'post',
+    url: api + 'polish',
+    data: par,
+    dataType: 'json',
+    success: function(data) {
+      console.log( data )
+      if ( !!data.success ) {alert( data.success )}
+      if ( !!data.error ) {alert( data.error )}
+      $('#query-btn').trigger('click')
+    }
+  });
+})
+
+$('#disinfection-btn').click(function () {
+  console.log('this is disinfection-btn')
+  var phoneNo = $('#detail-phoneNo').val()
+  var disinfection = $('#detail-disinfection').val()
+  if ( !phoneNo ) { alert('手机号必须填写。');return; }
+  if ( !(disinfection > '0') ) { alert('剩余次数不足。');return; }
+  var par = {
+    'phoneNo': phoneNo // 主键 手机号
+  }
+  $.ajax({
+    type: 'post',
+    url: api + 'disinfection',
+    data: par,
+    dataType: 'json',
+    success: function(data) {
+      console.log( data )
+      if ( !!data.success ) {alert( data.success )}
+      if ( !!data.error ) {alert( data.error )}
+      $('#query-btn').trigger('click')
+    }
+  });
+})

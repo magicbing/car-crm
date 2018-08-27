@@ -1,0 +1,27 @@
+{
+  "users": {
+    "12311112222333": [
+      {
+        "time": "2018-8-28 03:41:19",
+        "operation": "create"
+      },
+      {
+        "time": "2018-8-28 03:41:34",
+        "operation": "disinfection"
+      },
+      {
+        "time": "2018-8-28 03:41:35",
+        "operation": "polish"
+      },
+      {
+        "time": "2018-8-28 03:41:35",
+        "operation": "wash"
+      },
+      {
+        "time": "2018-8-28 03:41:36",
+        "operation": "wax"
+      }
+    ]
+  },
+  "count": 1
+}

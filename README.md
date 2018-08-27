@@ -18,3 +18,33 @@
     // 'package': package, // 套餐 A B C ...
     // 'remainder': remainder, // 剩余次数
   }
+
+//changelog all
+{
+  "phoneNo": "13222225555q",
+  "logs": [
+    {
+      "time": "1535393886758",
+      "old": {
+        "phoneNo": "13222225555q",
+        "remark": "123",
+        "plateNo": "测试2",
+        "milage": "2",
+        "wax": "3",
+        "wash": "4",
+        "polish": "",
+        "disinfection": "72"
+      },
+      "new": {
+        "phoneNo": "13222225555q",
+        "remark": "123",
+        "plateNo": "测试2",
+        "milage": "2",
+        "wax": "3",
+        "wash": "4",
+        "polish": "",
+        "disinfection": "72"
+      }
+    }
+  ]
+}
