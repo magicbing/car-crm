@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+    <title>index</title>
+
+  </head>
+  <body>
+    <!-- <h2>index.html</h2> -->
+    <div>
+      <h3>新增</h3>
+      <input type="button" value="新增" id="add-btn">
+      <br>
+      <span>
+        <input type="text" value="" id="add-phoneNo" placeholder="手机号码"> 
+        <input type="text" value="" id="add-remark" placeholder="备注">
+        <input type="text" value="" id="add-plateNo" placeholder="车牌号">
+        <input type="text" value="" id="add-milage" placeholder="公里数">
+        <input type="text" value="" id="add-wax" placeholder="打蜡次数">
+        <input type="text" value="" id="add-wash" placeholder="精洗次数">
+        <input type="text" value="" id="add-polish" placeholder="抛光次数">
+        <input type="text" value="" id="add-disinfection" placeholder="车内消毒次数">
+      </span>
+      <!-- <input type="text" value="" id="add-package" placeholder="套餐">  -->
+      <!-- <input type="text" value="" id="add-remainder" placeholder="剩余次数">  -->
+    </div>
+
+    <div>
+      <h3>查询</h3>
+      <input type="button" value="查询" id="query-btn">
+      <span>
+        <input type="text" value="" id="query-phoneNo" placeholder="手机号码"> 
+      </span>
+      <br><br>
+      <span>
+          <input type="text" disabled value="" id="detail-phoneNo" placeholder="手机号码"> 
+          <input type="text" value="" id="detail-remark" placeholder="备注">
+          <input type="text" value="" id="detail-plateNo" placeholder="车牌号">
+          <input type="text" value="" id="detail-milage" placeholder="公里数">
+          <input type="text" value="" id="detail-wax" placeholder="打蜡次数">
+          <input type="text" value="" id="detail-wash" placeholder="精洗次数">
+          <input type="text" value="" id="detail-polish" placeholder="抛光次数">
+          <input type="text" value="" id="detail-disinfection" placeholder="车内消毒次数">
+        </span>
+        <br><br>
+        <input type="button" value="修改" id="modify-btn">
+        <br><br>
+        <input type="button" value="进行打蜡" id="wax-btn">
+        <input type="button" value="进行精洗" id="wash-btn">
+        <input type="button" value="进行抛光" id="polish-btn">
+        <input type="button" value="进行消毒" id="disinfection-btn">
+    </div>
+
+    <div>
+      <h3>查询全部</h3>
+      <input type="button" value="查询全部" id="query-all-btn">
+      <span>
+        <!-- <input type="text" value="" id="query-phoneNo" placeholder="手机号码">  -->
+      </span>
+      <br><br>
+      <table>
+        <thead>
+          <tr>
+            <th>序号</th>
+            <th>手机号码</th>
+            <th>备注</th>
+            <th>车牌号</th>
+            <th>公里数</th>
+            <th>打蜡次数</th>
+            <th>精洗次数</th>
+            <th>抛光次数</th>
+            <th>车内消毒次数</th>
+          </tr>
+        </thead>
+        <tbody id="query-all-tbody"></tbody>
+      </table>
+    </div>
+    
+    <script type="text/javascript" src="/lib/javascript/jquery.js"></script>
+    <script type="text/javascript" src="/js/index.js"></script>
+  </body>
+</html>

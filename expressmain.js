@@ -15,6 +15,15 @@ const logdb = low(changelog)
 const fs = require('fs');
 //常量
 const port = process.env.PORT || 3000;
+//cros
+const allowCrossDomain = function(req, res, next) {
+  res.header('Access-Control-Allow-Origin', 'http://localhost:8080');
+  res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
+  res.header('Access-Control-Allow-Headers', 'Content-Type');
+  res.header('Access-Control-Allow-Credentials','true');
+  next();
+};
+app.use(allowCrossDomain);
 
 function setChangelog( operation, phoneNo ) {
   var date = new Date()
