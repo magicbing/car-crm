@@ -133,7 +133,7 @@ decreaseService( 'disinfection', '车内消毒' )
 // 所有的路由会加上“／api”前缀
 app.use('/api', router);
 
-app.use(express.static(path.join(__dirname, 'disk')))
+app.use(express.static(path.join(__dirname, 'dist')))
 app.get('/0', function (req, res) {
   res.send('Hello World')
 })

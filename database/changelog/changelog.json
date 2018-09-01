@@ -1,5 +1,101 @@
 {
   "users": {
+    "1": [
+      {
+        "time": "2018-9-1 23:21:20",
+        "operation": "modify"
+      },
+      {
+        "time": "2018-9-1 23:29:55",
+        "operation": "modify"
+      }
+    ],
+    "3": [
+      {
+        "time": "2018-9-1 23:36:19",
+        "operation": "wax"
+      },
+      {
+        "time": "2018-9-1 23:38:08",
+        "operation": "wax"
+      },
+      {
+        "time": "2018-9-1 23:38:10",
+        "operation": "wax"
+      },
+      {
+        "time": "2018-9-1 23:38:14",
+        "operation": "wax"
+      },
+      {
+        "time": "2018-9-1 23:42:54",
+        "operation": "wax"
+      },
+      {
+        "time": "2018-9-1 23:42:57",
+        "operation": "wax"
+      },
+      {
+        "time": "2018-9-1 23:42:58",
+        "operation": "wax"
+      },
+      {
+        "time": "2018-9-1 23:47:18",
+        "operation": "wax"
+      },
+      {
+        "time": "2018-9-1 23:47:20",
+        "operation": "wax"
+      },
+      {
+        "time": "2018-9-1 23:47:20",
+        "operation": "wax"
+      },
+      {
+        "time": "2018-9-1 23:47:21",
+        "operation": "wax"
+      },
+      {
+        "time": "2018-9-1 23:47:25",
+        "operation": "modify"
+      },
+      {
+        "time": "2018-9-1 23:47:26",
+        "operation": "wax"
+      },
+      {
+        "time": "2018-9-1 23:47:27",
+        "operation": "modify"
+      },
+      {
+        "time": "2018-9-1 23:47:29",
+        "operation": "wax"
+      },
+      {
+        "time": "2018-9-1 23:48:22",
+        "operation": "wax"
+      },
+      {
+        "time": "2018-9-1 23:48:26",
+        "operation": "polish"
+      },
+      {
+        "time": "2018-9-1 23:51:28",
+        "operation": "wash"
+      },
+      {
+        "time": "2018-9-1 23:51:29",
+        "operation": "polish"
+      },
+      {
+        "time": "2018-9-1 23:51:30",
+        "operation": "polish"
+      },
+      {
+        "time": "2018-9-1 23:51:37",
+        "operation": "modify"
+      }
+    ],
     "12311112222333": [
       {
         "time": "2018-8-28 03:41:19",
@@ -20,6 +116,44 @@
       {
         "time": "2018-8-28 03:41:36",
         "operation": "wax"
+      }
+    ],
+    "18551649003": [
+      {
+        "time": "2018-9-1 23:13:57",
+        "operation": "modify"
+      },
+      {
+        "time": "2018-9-1 23:14:05",
+        "operation": "modify"
+      },
+      {
+        "time": "2018-9-1 23:15:54",
+        "operation": "modify"
+      },
+      {
+        "time": "2018-9-1 23:16:04",
+        "operation": "modify"
+      },
+      {
+        "time": "2018-9-1 23:17:16",
+        "operation": "modify"
+      },
+      {
+        "time": "2018-9-1 23:17:28",
+        "operation": "modify"
+      },
+      {
+        "time": "2018-9-1 23:18:51",
+        "operation": "modify"
+      },
+      {
+        "time": "2018-9-1 23:18:55",
+        "operation": "modify"
+      },
+      {
+        "time": "2018-9-1 23:19:25",
+        "operation": "modify"
       }
     ]
   },

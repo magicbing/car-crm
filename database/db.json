@@ -15,10 +15,10 @@
       "remark": "remark",
       "plateNo": "苏A11111",
       "milage": "111",
-      "wax": 11156,
-      "wash": 22228,
-      "polish": 333338,
-      "disinfection": 123128
+      "wax": "111",
+      "wash": "222",
+      "polish": "333",
+      "disinfection": "123"
     },
     {
       "phoneNo": "0",
@@ -52,12 +52,12 @@
     },
     {
       "phoneNo": "3",
-      "remark": "3",
+      "remark": "123123备注",
       "plateNo": "3",
       "milage": "3",
-      "wax": "10",
-      "wash": "0",
-      "polish": "39",
+      "wax": "2",
+      "wash": "-1",
+      "polish": "36",
       "disinfection": "1"
     },
     {
@@ -291,5 +291,5 @@
       "disinfection": "6"
     }
   ],
-  "count": 97
+  "count": 99
 }
