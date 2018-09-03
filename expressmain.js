@@ -10,6 +10,7 @@ const FileSync = require('lowdb/adapters/FileSync')
 const adapter = new FileSync('database/db.json')
 const changelog = new FileSync('database/changelog/changelog.json')
 const db = low(adapter)
+db.defaults({ users: [{}], count: 0 }).write()
 const logdb = low(changelog)
 // backup
 const fs = require('fs');
@@ -34,6 +35,9 @@ function setChangelog( operation, phoneNo ) {
     'time': dateString,
     'operation': operation // 'create'
   }
+
+  logdb.defaults({ users: { 'usersInit': [{}]}, count: 0 }).write()
+  
   if ( !logdb.get(loguser).value() ) {
     //没有用户日志,新增用户条目
     logdb.set(loguser,[logObject]).write()
@@ -42,6 +46,7 @@ function setChangelog( operation, phoneNo ) {
     logdb.get(loguser).push(logObject).write()
     console.log('添加日志成功')
   }
+  logdb.update('count', n => n + 1).write()
 }
 // 给app配置bodyParser中间件
 // 通过如下配置再路由种处理request时，可以直接获得post请求的body部分
@@ -76,6 +81,17 @@ router.route('/add').post(function(req, res) {
 router.route('/query').post(function(req, res) {
   console.log(req.body)
   var json = db.get('users').find({ 'phoneNo': req.body.phoneNo }).value()
+  if ( !!json ) {
+    res.json( json );
+  } else {
+    res.json({ error: '没有 ' + req.body.phoneNo + ' 的数据!' });
+  }
+});
+
+router.route('/log').post(function(req, res) {
+  console.log(req.body)
+  var loguser = 'users["'+ req.body.phoneNo +'"]'
+  var json = logdb.get(loguser).value()
   if ( !!json ) {
     res.json( json );
   } else {

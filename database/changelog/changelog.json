@@ -2,160 +2,222 @@
   "users": {
     "1": [
       {
-        "time": "2018-9-1 23:21:20",
+        "time": "2018-9-4 01:12:29",
+        "operation": "create"
+      },
+      {
+        "time": "2018-9-4 01:15:05",
+        "operation": "create"
+      },
+      {
+        "time": "2018-9-4 01:15:15",
         "operation": "modify"
       },
       {
-        "time": "2018-9-1 23:29:55",
+        "time": "2018-9-4 01:15:21",
+        "operation": "wash"
+      },
+      {
+        "time": "2018-9-4 01:15:22",
+        "operation": "polish"
+      },
+      {
+        "time": "2018-9-4 01:15:22",
+        "operation": "disinfection"
+      }
+    ],
+    "2": [
+      {
+        "time": "2018-9-3 23:14:13",
+        "operation": "modify"
+      },
+      {
+        "time": "2018-9-3 23:14:14",
+        "operation": "wax"
+      },
+      {
+        "time": "2018-9-3 23:14:42",
+        "operation": "wax"
+      },
+      {
+        "time": "2018-9-3 23:15:27",
+        "operation": "modify"
+      },
+      {
+        "time": "2018-9-3 23:15:37",
+        "operation": "wax"
+      },
+      {
+        "time": "2018-9-3 23:15:37",
+        "operation": "wash"
+      },
+      {
+        "time": "2018-9-3 23:15:38",
+        "operation": "polish"
+      },
+      {
+        "time": "2018-9-3 23:15:38",
+        "operation": "disinfection"
+      },
+      {
+        "time": "2018-9-3 23:15:54",
+        "operation": "modify"
+      },
+      {
+        "time": "2018-9-3 23:15:58",
+        "operation": "disinfection"
+      },
+      {
+        "time": "2018-9-3 23:15:59",
+        "operation": "polish"
+      },
+      {
+        "time": "2018-9-3 23:15:59",
+        "operation": "wash"
+      },
+      {
+        "time": "2018-9-3 23:16:00",
+        "operation": "wax"
+      },
+      {
+        "time": "2018-9-3 23:17:12",
+        "operation": "modify"
+      },
+      {
+        "time": "2018-9-3 23:17:13",
+        "operation": "modify"
+      },
+      {
+        "time": "2018-9-3 23:17:22",
+        "operation": "modify"
+      },
+      {
+        "time": "2018-9-3 23:17:45",
+        "operation": "wax"
+      },
+      {
+        "time": "2018-9-3 23:17:46",
+        "operation": "wash"
+      },
+      {
+        "time": "2018-9-3 23:28:55",
+        "operation": "modify"
+      },
+      {
+        "time": "2018-9-4 00:34:37",
+        "operation": "modify"
+      },
+      {
+        "time": "2018-9-4 01:10:37",
+        "operation": "modify"
+      },
+      {
+        "time": "2018-9-4 01:10:38",
+        "operation": "modify"
+      },
+      {
+        "time": "2018-9-4 01:15:29",
+        "operation": "create"
+      },
+      {
+        "time": "2018-9-4 01:16:03",
+        "operation": "wash"
+      },
+      {
+        "time": "2018-9-4 01:16:04",
+        "operation": "polish"
+      },
+      {
+        "time": "2018-9-4 01:16:05",
+        "operation": "disinfection"
+      },
+      {
+        "time": "2018-9-4 01:16:06",
+        "operation": "wax"
+      },
+      {
+        "time": "2018-9-4 01:16:38",
+        "operation": "wax"
+      },
+      {
+        "time": "2018-9-4 01:16:38",
+        "operation": "wash"
+      },
+      {
+        "time": "2018-9-4 01:16:39",
+        "operation": "polish"
+      },
+      {
+        "time": "2018-9-4 01:16:39",
+        "operation": "disinfection"
+      },
+      {
+        "time": "2018-9-4 01:17:59",
+        "operation": "modify"
+      },
+      {
+        "time": "2018-9-4 01:17:59",
+        "operation": "modify"
+      },
+      {
+        "time": "2018-9-4 01:18:00",
         "operation": "modify"
       }
     ],
     "3": [
       {
-        "time": "2018-9-1 23:36:19",
-        "operation": "wax"
-      },
-      {
-        "time": "2018-9-1 23:38:08",
-        "operation": "wax"
-      },
-      {
-        "time": "2018-9-1 23:38:10",
-        "operation": "wax"
-      },
-      {
-        "time": "2018-9-1 23:38:14",
-        "operation": "wax"
-      },
-      {
-        "time": "2018-9-1 23:42:54",
-        "operation": "wax"
-      },
-      {
-        "time": "2018-9-1 23:42:57",
-        "operation": "wax"
-      },
-      {
-        "time": "2018-9-1 23:42:58",
-        "operation": "wax"
-      },
-      {
-        "time": "2018-9-1 23:47:18",
-        "operation": "wax"
-      },
-      {
-        "time": "2018-9-1 23:47:20",
-        "operation": "wax"
-      },
-      {
-        "time": "2018-9-1 23:47:20",
-        "operation": "wax"
-      },
-      {
-        "time": "2018-9-1 23:47:21",
-        "operation": "wax"
-      },
-      {
-        "time": "2018-9-1 23:47:25",
+        "time": "2018-9-3 23:13:31",
         "operation": "modify"
       },
       {
-        "time": "2018-9-1 23:47:26",
-        "operation": "wax"
-      },
-      {
-        "time": "2018-9-1 23:47:27",
-        "operation": "modify"
-      },
-      {
-        "time": "2018-9-1 23:47:29",
-        "operation": "wax"
-      },
-      {
-        "time": "2018-9-1 23:48:22",
-        "operation": "wax"
-      },
-      {
-        "time": "2018-9-1 23:48:26",
-        "operation": "polish"
-      },
-      {
-        "time": "2018-9-1 23:51:28",
-        "operation": "wash"
-      },
-      {
-        "time": "2018-9-1 23:51:29",
-        "operation": "polish"
-      },
-      {
-        "time": "2018-9-1 23:51:30",
-        "operation": "polish"
-      },
-      {
-        "time": "2018-9-1 23:51:37",
+        "time": "2018-9-3 23:14:08",
         "operation": "modify"
       }
     ],
-    "12311112222333": [
+    "5": [
       {
-        "time": "2018-8-28 03:41:19",
-        "operation": "create"
+        "time": "2018-9-3 23:14:30",
+        "operation": "wax"
       },
       {
-        "time": "2018-8-28 03:41:34",
+        "time": "2018-9-3 23:14:31",
+        "operation": "wash"
+      },
+      {
+        "time": "2018-9-3 23:14:31",
+        "operation": "polish"
+      },
+      {
+        "time": "2018-9-3 23:14:32",
         "operation": "disinfection"
+      }
+    ],
+    "19911112222": [
+      {
+        "time": "2018-9-3 23:16:22",
+        "operation": "wax"
       },
       {
-        "time": "2018-8-28 03:41:35",
-        "operation": "polish"
-      },
-      {
-        "time": "2018-8-28 03:41:35",
+        "time": "2018-9-3 23:16:23",
         "operation": "wash"
       },
       {
-        "time": "2018-8-28 03:41:36",
-        "operation": "wax"
-      }
-    ],
-    "18551649003": [
-      {
-        "time": "2018-9-1 23:13:57",
+        "time": "2018-9-3 23:16:39",
         "operation": "modify"
       },
       {
-        "time": "2018-9-1 23:14:05",
-        "operation": "modify"
+        "time": "2018-9-3 23:16:44",
+        "operation": "wash"
       },
       {
-        "time": "2018-9-1 23:15:54",
-        "operation": "modify"
+        "time": "2018-9-3 23:16:45",
+        "operation": "polish"
       },
       {
-        "time": "2018-9-1 23:16:04",
-        "operation": "modify"
-      },
-      {
-        "time": "2018-9-1 23:17:16",
-        "operation": "modify"
-      },
-      {
-        "time": "2018-9-1 23:17:28",
-        "operation": "modify"
-      },
-      {
-        "time": "2018-9-1 23:18:51",
-        "operation": "modify"
-      },
-      {
-        "time": "2018-9-1 23:18:55",
-        "operation": "modify"
-      },
-      {
-        "time": "2018-9-1 23:19:25",
-        "operation": "modify"
+        "time": "2018-9-3 23:16:46",
+        "operation": "disinfection"
       }
     ]
   },
-  "count": 1
+  "count": 43
 }

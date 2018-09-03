@@ -45,16 +45,16 @@
       "remark": "2",
       "plateNo": "2",
       "milage": "2",
-      "wax": "1",
+      "wax": "0",
       "wash": "1",
-      "polish": "2",
-      "disinfection": "2"
+      "polish": "0",
+      "disinfection": "0"
     },
     {
       "phoneNo": "3",
       "remark": "123123备注",
-      "plateNo": "333",
-      "milage": "33",
+      "plateNo": "3",
+      "milage": "3",
       "wax": "2",
       "wash": "-1",
       "polish": "36",
@@ -75,10 +75,10 @@
       "remark": "5",
       "plateNo": "5",
       "milage": "5",
-      "wax": "3",
-      "wash": "3",
-      "polish": "3",
-      "disinfection": "3"
+      "wax": 4,
+      "wash": 4,
+      "polish": 4,
+      "disinfection": 4
     },
     {
       "phoneNo": "6",
@@ -289,27 +289,7 @@
       "wash": "4",
       "polish": "5",
       "disinfection": "6"
-    },
-    {
-      "phoneNo": "0903",
-      "remark": "7",
-      "plateNo": "1",
-      "milage": "2",
-      "wax": "3",
-      "wash": "4",
-      "polish": "5",
-      "disinfection": "6"
-    },
-    {
-      "phoneNo": "19911112222",
-      "remark": "22",
-      "plateNo": "测A11121",
-      "milage": "11222",
-      "wax": "19",
-      "wash": "19",
-      "polish": "20",
-      "disinfection": "20"
     }
   ],
-  "count": 115
+  "count": 100
 }

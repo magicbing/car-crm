@@ -238,3 +238,25 @@ $('#disinfection-btn').click(function () {
     }
   });
 })
+
+$('#log-btn').click(function () {
+  console.log('this is log-btn')
+  var phoneNo = $('#query-phoneNo').val()
+  if ( !phoneNo ) { alert('手机号必须填写。');return; }
+  var par = {
+    'phoneNo': phoneNo // 主键 手机号
+  }
+  $.ajax({
+    type: 'post',
+    url: api + 'log',
+    data: par,
+    dataType: 'json',
+    success: function(data) {
+      console.log( data )
+      if ( !!data.success ) {alert( data.success )}
+      if ( !!data.error ) {
+        alert( data.error )
+      }
+    }
+  });
+})
