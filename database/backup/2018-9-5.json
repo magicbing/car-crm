@@ -37,7 +37,7 @@
       "milage": "2",
       "wax": "1",
       "wash": "1",
-      "polish": "1",
+      "polish": "2",
       "disinfection": "2"
     },
     {
@@ -47,7 +47,7 @@
       "milage": "33",
       "wax": "1",
       "wash": "-3",
-      "polish": "35",
+      "polish": "36",
       "disinfection": "1"
     },
     {
@@ -219,7 +219,27 @@
       "wash": "10",
       "polish": "10",
       "disinfection": "10"
+    },
+    {
+      "phoneNo": "0903",
+      "remark": "7",
+      "plateNo": "1",
+      "milage": "2",
+      "wax": "2",
+      "wash": "4",
+      "polish": "5",
+      "disinfection": "6"
+    },
+    {
+      "phoneNo": "0904",
+      "remark": "3",
+      "plateNo": "3",
+      "milage": "3",
+      "wax": "3",
+      "wash": "3",
+      "polish": "3",
+      "disinfection": "3"
     }
   ],
-  "count": 4
+  "count": 2
 }
